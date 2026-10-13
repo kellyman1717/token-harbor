@@ -20,8 +20,14 @@ menghindari rate limit "Too many sign-ups from this network".
 ## Pakai
 
 ```
-python signup.py            # interaktif
-python signup.py 5          # 5 akun, sekuensial
+python signup.py
+```
+
+Tanpa argumen, script tanya interaktif: jumlah akun, mode proxy, jumlah worker.
+Opsi lain kalau perlu:
+
+```
+python signup.py 5               # 5 akun langsung, sekuensial
 python signup.py 5 --workers 3   # 3 akun paralel, tiap akun proxy sendiri
 python signup.py 1 --direct      # IP lokal, tanpa proxy
 python signup.py 1 --proxy socks5h://user:pass@host:port
